@@ -1,5 +1,8 @@
 <script setup>
+import pkg from '../package.json'
 import DarkMode from '@/components/DarkMode.vue'
+
+const appVersion = pkg.version
 </script>
 
 <template>
@@ -9,12 +12,13 @@ import DarkMode from '@/components/DarkMode.vue'
   <main>
     <DarkMode />
   </main>
+  <footer>Version {{appVersion}} @LivreSaber</footer>
 </template>
 
 <style scoped>
 .logo {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
 }
 
 header {
@@ -30,5 +34,9 @@ main {
 
 main h1 {
   margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
 }
 </style>
