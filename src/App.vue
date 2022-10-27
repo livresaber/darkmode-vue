@@ -12,7 +12,9 @@ const appVersion = pkg.version
   <main>
     <DarkMode />
   </main>
-  <footer>Version {{appVersion}} @LivreSaber</footer>
+  <footer>
+    <a href='https://github.com/livresaber/darkmode-vue' target='_blank'>Version {{appVersion}} @LivreSaber</a>
+  </footer>
 </template>
 
 <style scoped>
