@@ -6,9 +6,7 @@ import DarkMode from '@/components/DarkMode.vue'
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
   </header>
-
   <main>
-    <h1>DarkMode</h1>
     <DarkMode />
   </main>
 </template>
