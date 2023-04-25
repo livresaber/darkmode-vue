@@ -8,8 +8,6 @@
 }
 
 body {
-  --color-primary: #41b883;
-  --color-secondary: #34495e;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -24,16 +22,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body.lightmode {
-  --color-text: #222;
-  --color-background: #fff;
-}
-
-body.darkmode {
-  --color-text: #fff;
-  --color-background: #222;
 }
 
 #app {

@@ -31,6 +31,21 @@ watch(mode, (value) => setMode(value))
 </template>
 
 <style>
+body {
+  --color-primary: #41b883;
+  --color-secondary: #34495e;
+}
+
+body.lightmode {
+  --color-text: #222;
+  --color-background: #fff;
+}
+
+body.darkmode {
+  --color-text: #fff;
+  --color-background: #222;
+}
+
 .btn-mode {
   background: var(--color-primary);
   color: var(--color-secondary);
