@@ -1,6 +1,6 @@
 <script setup>
 import pkg from '../package.json'
-import DarkMode from '@/components/DarkMode.vue'
+import DarkModeVue from 'darkmode-vue'
 
 const appVersion = pkg.version
 </script>
@@ -10,7 +10,7 @@ const appVersion = pkg.version
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="200" height="200" />
   </header>
   <main>
-    <DarkMode />
+    <DarkModeVue />
   </main>
   <footer>
     <a href='https://github.com/livresaber/darkmode-vue' target='_blank'>Version {{appVersion}} @LivreSaber</a>
