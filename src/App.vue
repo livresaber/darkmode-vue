@@ -1,6 +1,6 @@
 <script setup>
 import pkg from '../package.json'
-import DarkModeVue from 'darkmode-vue'
+import DarkModeVue from '../dist/darkmode-vue'
 
 const appVersion = pkg.version
 </script>
@@ -23,6 +23,20 @@ const appVersion = pkg.version
     </code>
     <code>
       <DarkModeVue />
+    </code>
+    <h2>Prop hiddenLabel</h2>
+    <code class="code">
+      {{`<DarkModeVue :hiddenLabel="true" />`}}
+    </code>
+    <code>
+      <DarkModeVue :hiddenLabel="true" />
+    </code>
+    <h2>Prop hiddenIcon</h2>
+    <code class="code">
+      {{`<DarkModeVue :hiddenIcon="true" />`}}
+    </code>
+    <code>
+      <DarkModeVue :hiddenIcon="true" />
     </code>
     <h3>Description class of components</h3>
     <p>If DarkModeVue usage in a page, a class in body document is update with darkmode or lightmode.</p>

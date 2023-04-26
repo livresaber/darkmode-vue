@@ -16,6 +16,16 @@ import VueTechsLogs from 'darkmode-vue';
 <Darkmode />
 ```
 
+Prop hiddenLabel
+```vue
+<Darkmode :hiddenLabel="true" />
+```
+
+Prop hiddenIcon
+```vue
+<Darkmode :hiddenIcon="true" />
+```
+
 ### Description class of components
 If DarkModeVue usage in a page, a class in body document is update with class darkmode or lightmode.
 In LocalStorage is created a key store with value current mode.
