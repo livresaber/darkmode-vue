@@ -1,13 +1,13 @@
 {
   "name": "darkmode-vue",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": false,
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/darkmode-vue.umd.js",
-  "module": "./dist/darkmode-vue.mjs",
+  "main": "./dist/darkmode-vue.umd.cjs",
+  "module": "./dist/darkmode-vue.js",
   "types": "./dist/main.d.ts",
   "author": "lucasferreiralimax (https://github.com/lucasferreiralimax)",
   "repository": "https://github.com/livresaber/darkmode-vue",
@@ -16,8 +16,8 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/darkmode-vue.jms",
-      "require": "./dist/darkmode-vue.umd.js"
+      "import": "./dist/darkmode-vue.js",
+      "require": "./dist/darkmode-vue.umd.cjs"
     },
     "./dist/style.css": "./dist/style.css"
   },
@@ -32,6 +32,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "darkmode-vue": "^0.1.4",
     "vue": "^3.2.41"
   },
   "devDependencies": {
