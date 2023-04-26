@@ -718,6 +718,22 @@ cypress@^10.10.0:
     untildify "^4.0.0"
     yauzl "^2.10.0"
 
+darkmode-vue@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.npmjs.org/darkmode-vue/-/darkmode-vue-0.1.5.tgz"
+  integrity sha512-aV613g7lb4NXKJV7sll3/dsslY1S7ifcrpqPULWO63+sfWztoy1VB3mgLYeN0fNxaE7nHbaVG178UFJoPDDL9A==
+  dependencies:
+    darkmode-vue "^0.1.5"
+    vue "^3.2.41"
+
+darkmode-vue@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.npmjs.org/darkmode-vue/-/darkmode-vue-0.2.2.tgz"
+  integrity sha512-fRm/R+yA+uAF3lI1k6FNHwZC+lkxcfFsYDOBrPTotV/GhrwgNLDYEnyOCi4hoJni3OE8Y5j0XwZFhWQx386EhA==
+  dependencies:
+    darkmode-vue "^0.1.5"
+    vue "^3.2.41"
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz"
