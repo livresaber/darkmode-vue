@@ -15,3 +15,9 @@ import VueTechsLogs from 'darkmode-vue';
 
 <Darkmode />
 ```
+
+### Description class of components
+If DarkModeVue usage in a page, a class in body document is update with class darkmode or lightmode.
+In LocalStorage is created a key store with value current mode.
+Do you usage children body.darkmode or body.lightmode styles for your application.
+I recomend create a variables colors in css and update this with toggle class of body document.
