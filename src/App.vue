@@ -1,6 +1,6 @@
 <script setup>
 import pkg from '../package.json'
-import DarkModeVue from '../dist/darkmode-vue'
+import DarkModeVue from 'darkmode-vue'
 
 const appVersion = pkg.version
 </script>
