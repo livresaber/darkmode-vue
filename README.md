@@ -26,6 +26,29 @@ Prop hiddenIcon
 <Darkmode :hiddenIcon="true" />
 ```
 
+Style modification and usage in your styles
+```css
+body {
+  --dm-color-primary: #41b883;
+  --dm-color-secondary: #34495e;
+}
+
+body.lightmode {
+  --dm-color-text: #222;
+  --dm-color-background: #fff;
+}
+
+body.darkmode {
+  --dm-color-text: #fff;
+  --dm-color-background: #222;
+}
+
+body.lightmode .teste {
+  background: #f00;
+}
+```
+Create your variable colors and update this with class .lightmode or .darkmode.
+
 ### Description class of components
 If DarkModeVue usage in a page, a class in body document is update with class darkmode or lightmode.
 In LocalStorage is created a key store with value current mode.

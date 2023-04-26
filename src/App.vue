@@ -38,6 +38,28 @@ const appVersion = pkg.version
     <code>
       <DarkModeVue :hiddenIcon="true" />
     </code>
+    <h2>Style modification and usage in your styles</h2>
+    <code class="code">
+      {{`body {
+  --dm-color-primary: #41b883;
+  --dm-color-secondary: #34495e;
+}
+
+body.lightmode {
+  --dm-color-text: #222;
+  --dm-color-background: #fff;
+}
+
+body.darkmode {
+  --dm-color-text: #fff;
+  --dm-color-background: #222;
+}
+
+body.lightmode .teste {
+  background: #f00;
+}`}}
+    </code>
+    <p>Create your variable colors and update this with class .lightmode or .darkmode.</p>
     <h3>Description class of components</h3>
     <p>If DarkModeVue usage in a page, a class in body document is update with darkmode or lightmode.</p>
     <p>In LocalStorage is created a key store with value current mode.</p>
@@ -62,11 +84,12 @@ h2, h3 {
 code {
   padding: 1rem;
   margin-top: 2rem;
-  text-align: center;
+  text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: var(--dm-color-primary);
+  white-space: pre-wrap;
 }
 
 code.code:hover {
