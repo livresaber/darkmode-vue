@@ -11,19 +11,19 @@ npm install darkmode-vue
 
 Usage basic
 ```vue
-import VueTechsLogs from 'darkmode-vue';
+import DarkModeVue from 'darkmode-vue';
 
-<Darkmode />
+<DarkModeVue />
 ```
 
 Prop hiddenLabel
 ```vue
-<Darkmode :hiddenLabel="true" />
+<DarkModeVue :hiddenLabel="true" />
 ```
 
 Prop hiddenIcon
 ```vue
-<Darkmode :hiddenIcon="true" />
+<DarkModeVue :hiddenIcon="true" />
 ```
 
 Style modification and usage in your styles
