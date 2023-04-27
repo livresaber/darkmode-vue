@@ -6,7 +6,7 @@ A component darkmode injection in your document page with vue.js
 
 Install
 ```js
-npm install darkmode-vue
+npm install --save darkmode-vue
 ```
 
 Usage basic
