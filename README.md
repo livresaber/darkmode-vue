@@ -2,6 +2,8 @@
 
 A component darkmode injection in your document page with vue.js
 
+<a href="https://darkmode-vue.web.app" target="_blank">Live Preview</a>
+
 <img alt="A component darkmode screenshot using in a application real" width="100%" src="https://raw.githubusercontent.com/livresaber/darkmode-vue/master/public/screen-darkmode-vue.png" />
 
 Install
