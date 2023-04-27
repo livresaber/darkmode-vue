@@ -1,26 +1,6 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { toggleMode, mode } from '../store'
 const props = defineProps(['hiddenIcon', 'hiddenLabel'])
-
-const modeLocal = localStorage.getItem('darkmode')
-const mode = ref(modeLocal == null ? false : JSON.parse(modeLocal))
-
-const toggleMode = () => mode.value = !mode.value
-
-const setMode = (value) => {
-  localStorage.setItem('darkmode', JSON.stringify(value))
-
-  if(value) {
-    document.body.classList.add('darkmode')
-    document.body.classList.remove('lightmode')
-  } else {
-    document.body.classList.add('lightmode')
-    document.body.classList.remove('darkmode')
-  }
-}
-
-setMode(mode.value)
-watch(mode, (value) => setMode(value))
 </script>
 
 <template>
