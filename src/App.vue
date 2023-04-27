@@ -1,6 +1,7 @@
 <script setup>
 import pkg from '../package.json'
 import DarkModeVue from 'darkmode-vue'
+import CodeComponent from './components/CodeComponent.vue';
 
 const appVersion = pkg.version
 </script>
@@ -12,34 +13,34 @@ const appVersion = pkg.version
   </header>
   <main>
     <h2>Install</h2>
-    <code class="code">
+    <CodeComponent>
       npm install darkmode-vue
-    </code>
+    </CodeComponent>
     <h2>Usage</h2>
-    <code class="code">
+    <CodeComponent>
       import DarkModeVue from 'darkmode-vue'
       <br>
       {{`<DarkModeVue />`}}
-    </code>
-    <code>
+    </CodeComponent>
+    <CodeComponent :disableCopy="true">
       <DarkModeVue />
-    </code>
+    </CodeComponent>
     <h2>Prop hiddenLabel</h2>
-    <code class="code">
+    <CodeComponent>
       {{`<DarkModeVue :hiddenLabel="true" />`}}
-    </code>
-    <code>
+    </CodeComponent>
+    <CodeComponent :disableCopy="true">
       <DarkModeVue :hiddenLabel="true" />
-    </code>
+    </CodeComponent>
     <h2>Prop hiddenIcon</h2>
-    <code class="code">
+    <CodeComponent>
       {{`<DarkModeVue :hiddenIcon="true" />`}}
-    </code>
-    <code>
+    </CodeComponent>
+    <CodeComponent :disableCopy="true">
       <DarkModeVue :hiddenIcon="true" />
-    </code>
+    </CodeComponent>
     <h2>Style modification and usage in your styles</h2>
-    <code class="code">
+    <CodeComponent>
       {{`body {
   --dm-color-primary: #41b883;
   --dm-color-secondary: #34495e;
@@ -58,7 +59,7 @@ body.darkmode {
 body.lightmode .teste {
   background: #f00;
 }`}}
-    </code>
+    </CodeComponent>
     <p>Create your variable colors and update this with class .lightmode or .darkmode.</p>
     <h3>Description class of components</h3>
     <p>If DarkModeVue usage in a page, a class in body document is update with darkmode or lightmode.</p>
@@ -79,21 +80,6 @@ body.lightmode .teste {
 
 h2, h3 {
   margin-top: 2rem;
-}
-
-code {
-  padding: 1rem;
-  margin-top: 2rem;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--dm-color-primary);
-  white-space: pre-wrap;
-}
-
-code.code:hover {
-  background: #000;
 }
 
 header {
