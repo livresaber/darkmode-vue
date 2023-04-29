@@ -1,6 +1,6 @@
 <script setup>
 import pkg from '../package.json';
-import DarkModeVue, { useDarkModeVue } from '../dist/darkmode-vue';
+import DarkModeVue, { useDarkModeVue } from 'darkmode-vue';
 import CodeComponent from './components/CodeComponent.vue';
 
 const appVersion = pkg.version;
