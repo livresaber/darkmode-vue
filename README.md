@@ -33,9 +33,6 @@ Style modification and usage in your styles
 body {
   --dm-color-primary: #41b883;
   --dm-color-secondary: #34495e;
-}
-
-body.lightmode {
   --dm-color-text: #222;
   --dm-color-background: #fff;
 }

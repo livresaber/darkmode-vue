@@ -1,9 +1,9 @@
 <script setup>
-import pkg from '../package.json'
-import DarkModeVue from 'darkmode-vue'
+import pkg from '../package.json';
+import DarkModeVue from 'darkmode-vue';
 import CodeComponent from './components/CodeComponent.vue';
 
-const appVersion = pkg.version
+const appVersion = pkg.version;
 </script>
 
 <template>
@@ -44,9 +44,6 @@ const appVersion = pkg.version
       {{`body {
   --dm-color-primary: #41b883;
   --dm-color-secondary: #34495e;
-}
-
-body.lightmode {
   --dm-color-text: #222;
   --dm-color-background: #fff;
 }

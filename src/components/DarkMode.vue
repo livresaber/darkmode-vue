@@ -25,9 +25,6 @@ const props = defineProps(['hiddenIcon', 'hiddenLabel'])
 body {
   --dm-color-primary: #f00;
   --dm-color-secondary: #000;
-}
-
-body.lightmode {
   --dm-color-text: #222;
   --dm-color-background: #fff;
 }
