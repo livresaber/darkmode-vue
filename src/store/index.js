@@ -1,12 +1,14 @@
 import { ref, watch } from 'vue'
 
-const modeLocal = localStorage.getItem('darkmode')
+const namePack = 'darkmode'
+const modeLocal = localStorage.getItem(namePack)
 export const mode = ref(modeLocal == null ? false : JSON.parse(modeLocal))
 export const toggleMode = () => mode.value = !mode.value
 
 const setMode = (value) => {
-  localStorage.setItem('darkmode', JSON.stringify(value))
-  document.body.classList.toggle('darkmode')
+  const bodyClass = document.body.classList
+  localStorage.setItem(namePack, JSON.stringify(value))
+  value ? bodyClass.add(namePack) : bodyClass.remove(namePack)
 }
 
 setMode(mode.value)
