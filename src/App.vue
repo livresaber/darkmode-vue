@@ -1,6 +1,6 @@
 <script setup>
 import pkg from '../package.json';
-import DarkModeVue from 'darkmode-vue';
+import DarkModeVue from '../dist/darkmode-vue';
 import CodeComponent from './components/CodeComponent.vue';
 
 const appVersion = pkg.version;
@@ -16,6 +16,7 @@ const appVersion = pkg.version;
     <CodeComponent>
       npm install darkmode-vue
     </CodeComponent>
+
     <h2>Usage</h2>
     <CodeComponent>
       import DarkModeVue from 'darkmode-vue'
@@ -25,6 +26,7 @@ const appVersion = pkg.version;
     <CodeComponent :disableCopy="true">
       <DarkModeVue />
     </CodeComponent>
+
     <h2>Prop hiddenLabel</h2>
     <CodeComponent>
       {{`<DarkModeVue :hiddenLabel="true" />`}}
@@ -32,6 +34,7 @@ const appVersion = pkg.version;
     <CodeComponent :disableCopy="true">
       <DarkModeVue :hiddenLabel="true" />
     </CodeComponent>
+
     <h2>Prop hiddenIcon</h2>
     <CodeComponent>
       {{`<DarkModeVue :hiddenIcon="true" />`}}
@@ -39,6 +42,15 @@ const appVersion = pkg.version;
     <CodeComponent :disableCopy="true">
       <DarkModeVue :hiddenIcon="true" />
     </CodeComponent>
+
+    <h2>Prop titleDark and titleLight</h2>
+    <CodeComponent>
+      {{`<DarkModeVue titleDark="Tema escuro" titleLight="Tema claro" />`}}
+    </CodeComponent>
+    <CodeComponent :disableCopy="true">
+      <DarkModeVue titleDark="Tema escuro" titleLight="Tema claro" />
+    </CodeComponent>
+
     <h2>Style modification and usage in your styles</h2>
     <CodeComponent>
       {{`body {
@@ -51,18 +63,14 @@ const appVersion = pkg.version;
 body.darkmode {
   --dm-color-text: #fff;
   --dm-color-background: #222;
-}
-
-body.lightmode .teste {
-  background: #f00;
 }`}}
     </CodeComponent>
-    <p>Create your variable colors and update this with class .lightmode or .darkmode.</p>
+    <p>Create your variable colors and update this with class .darkmode.</p>
     <h3>Description class of components</h3>
-    <p>If DarkModeVue usage in a page, a class in body document is update with darkmode or lightmode.</p>
+    <p>If DarkModeVue usage in a page, a class in body document is update with darkmode.</p>
     <p>In LocalStorage is created a key store with value current mode.</p>
-    <p>Do you usage children body.darkmode or body.lightmode styles for your application.</p>
-    <p>I recomend create a variables colors in css and update this with toggle class of body document.</p>
+    <p>Do you usage children body.darkmode styles for your application.</p>
+    <p>I recommend create a variables colors in css and update this with toggle class of body document.</p>
   </main>
   <footer>
     <a href='https://github.com/livresaber/darkmode-vue' target='_blank'>Version {{appVersion}} @LivreSaber</a>

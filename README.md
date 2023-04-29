@@ -28,6 +28,11 @@ Prop hiddenIcon
 <DarkModeVue :hiddenIcon="true" />
 ```
 
+Prop titleDark and titleLight
+```vue
+<DarkModeVue titleDark="Tema escuro" titleLight="Tema claro" />
+```
+
 Style modification and usage in your styles
 ```css
 body {
@@ -41,15 +46,11 @@ body.darkmode {
   --dm-color-text: #fff;
   --dm-color-background: #222;
 }
-
-body.lightmode .teste {
-  background: #f00;
-}
 ```
-Create your variable colors and update this with class .lightmode or .darkmode.
+Create your variable colors and update this with class .darkmode.
 
 ### Description class of components
-If DarkModeVue usage in a page, a class in body document is update with class darkmode or lightmode.
+If DarkModeVue usage in a page, a class in body document is update with class darkmode.
 In LocalStorage is created a key store with value current mode.
-Do you usage children body.darkmode or body.lightmode styles for your application.
+Do you usage children body.darkmode styles for your application.
 I recomend create a variables colors in css and update this with toggle class of body document.
