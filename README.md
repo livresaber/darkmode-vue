@@ -28,9 +28,27 @@ Prop hiddenIcon
 <DarkModeVue :hiddenIcon="true" />
 ```
 
-Prop titleDark and titleLight
+Prop labelDark and labelLight
 ```vue
-<DarkModeVue titleDark="Tema escuro" titleLight="Tema claro" />
+<DarkModeVue labelDark="Tema escuro" labelLight="Tema claro" />
+```
+
+Slot change icon and label custom
+```vue
+<DarkModeVue>
+  <template #iconDark>
+    <svg></svg>
+  </template>
+  <template #iconLight>
+    <svg></svg>
+  </template>
+  <template #labelDark>
+    Off
+  </template>
+  <template #labelLight>
+    On
+  </template>
+</DarkModeVue>
 ```
 
 Style modification and usage in your styles
