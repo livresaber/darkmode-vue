@@ -718,14 +718,6 @@ cypress@^10.10.0:
     untildify "^4.0.0"
     yauzl "^2.10.0"
 
-darkmode-vue@^0.2.8, darkmode-vue@^0.2.9:
-  version "0.2.9"
-  resolved "https://registry.npmjs.org/darkmode-vue/-/darkmode-vue-0.2.9.tgz"
-  integrity sha512-49mnm8YCRrckwGtVlPQls4VsOKn2fql5e6f0Ka6W2iHM5Ma7M7sIk1Oj61OFSbad18+iQIKBdfjKgQHUVoldFg==
-  dependencies:
-    darkmode-vue "^0.2.8"
-    vue "^3.2.41"
-
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.npmjs.org/dashdash/-/dashdash-1.14.1.tgz"
