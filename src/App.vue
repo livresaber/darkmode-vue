@@ -1,9 +1,10 @@
 <script setup>
 import pkg from '../package.json';
-import DarkModeVue from 'darkmode-vue';
+import DarkModeVue, { useDarkModeVue } from '../dist/darkmode-vue';
 import CodeComponent from './components/CodeComponent.vue';
 
 const appVersion = pkg.version;
+const { mode, toggleMode } = useDarkModeVue()
 </script>
 
 <template>
@@ -106,6 +107,19 @@ body.darkmode {
 }`}}
     </CodeComponent>
     <p>Create your variable colors and update this with class .darkmode.</p>
+
+    <h2>Usage useDarkModeVue with toggleMode and mode value</h2>
+    <CodeComponent>
+      {{`import { useDarkModeVue } from 'darkmode-vue';
+
+const { mode, toggleMode } = useDarkModeVue();
+
+<button @click="toggleMode">DarkModeVue \{\{ mode \}\}</button>
+`}}
+    </CodeComponent>
+
+    <button class="btn-custom" @click="toggleMode">DarkModeVue {{ mode }}</button>
+
     <h3>Description class of components</h3>
     <p>If DarkModeVue usage in a page, a class in body document is update with darkmode.</p>
     <p>In LocalStorage is created a key store with value current mode.</p>
@@ -118,6 +132,12 @@ body.darkmode {
 </template>
 
 <style scoped>
+
+.btn-custom {
+  width: 200px;
+  padding: 1rem;
+  margin: 2rem auto 0;
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;

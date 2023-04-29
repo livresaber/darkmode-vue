@@ -51,6 +51,15 @@ Slot change icon and label custom
 </DarkModeVue>
 ```
 
+Usage useDarkModeVue with toggleMode and mode value
+```vue
+import { useDarkModeVue } from 'darkmode-vue';
+
+const { mode, toggleMode } = useDarkModeVue();
+
+<button @click="toggleMode">DarkModeVue {{ mode }}</button>
+```
+
 Style modification and usage in your styles
 ```css
 body {
