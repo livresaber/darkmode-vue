@@ -10,7 +10,7 @@ describe('DarkMode', () => {
     expect(wrapper.vm.mode).toBeFalsy()
     expect(JSON.parse(localStorage.getItem('darkmode'))).toBeFalsy()
     expect(wrapper.text()).toContain('LightMode')
-    expect(wrapper.find('[aria-label="Icon Light Mode"]').isVisible()).toBeTruthy()
+    expect(wrapper.find('[aria-label="Icon LightMode"]').isVisible()).toBeTruthy()
   })
   it('renders content darkmode mode', async () => {
     const wrapper = mount(DarkMode)
@@ -19,6 +19,6 @@ describe('DarkMode', () => {
     expect(wrapper.vm.mode).toBeTruthy()
     expect(JSON.parse(localStorage.getItem('darkmode'))).toBeTruthy()
     expect(wrapper.text()).toContain('DarkMode')
-    expect(wrapper.find('[aria-label="Icon Dark Mode"]').isVisible()).toBeTruthy()
+    expect(wrapper.find('[aria-label="Icon DarkMode"]').isVisible()).toBeTruthy()
   })
 })
