@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "darkmode-vue": "0.4.0",
-    "vue": "^3.4.15"
+    "vue": "^3.4.16"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",
@@ -44,7 +44,7 @@
     "eslint-plugin-vue": "^9.21.1",
     "jsdom": "^24.0.0",
     "start-server-and-test": "^2.0.3",
-    "vite": "^5.0.12",
+    "vite": "^5.1.0",
     "vite-plugin-style-inject": "^0.0.1",
     "vite-svg-loader": "^4.0.0",
     "vitest": "^1.2.2"
