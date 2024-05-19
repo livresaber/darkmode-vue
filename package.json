@@ -27,8 +27,8 @@
     "build:module": "vite build --config vite-module.config.js",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
-    "test:e2e": "start-server-and-test preview :4173 'cypress run --e2e'",
-    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'",
+    "test:e2e": "start-server-and-test vite preview http-get://localhost:4173 'cypress run --e2e' --timeout 30000",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http-get://localhost:4173 'cypress open --e2e'",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
@@ -38,9 +38,9 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/test-utils": "^2.4.6",
-    "cypress": "^12.17.4",
-    "eslint": "^9.2.0",
-    "eslint-plugin-cypress": "^2.15.1",
+    "cypress": "^13.9.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-cypress": "^3.2.0",
     "eslint-plugin-vue": "^9.26.0",
     "jsdom": "^24.0.0",
     "start-server-and-test": "^2.0.3",
