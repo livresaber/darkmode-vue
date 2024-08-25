@@ -34,7 +34,7 @@
   "dependencies": {
     "darkmode-vue": "0.4.0",
     "vue": "^3.4.38",
-    "vue-techs-logos": "^0.1.18"
+    "vue-techs-logos": "^0.1.22"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
