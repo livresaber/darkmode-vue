@@ -32,8 +32,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "darkmode-vue": "^0.4.0",
-    "nucleus-vue": "^0.0.5",
+    "darkmode-vue": "0.4.1",
+    "nucleus-vue": "^0.0.7",
     "vue": "^3.5.12"
   },
   "devDependencies": {
