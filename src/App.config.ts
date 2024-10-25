@@ -6,6 +6,7 @@ export const configApp = {
   name: 'darkmode-vue',
   npm: 'https://www.npmjs.com/package/darkmode-vue',
   github: 'https://github.com/livresaber/darkmode-vue',
+  linkedin: 'https://www.linkedin.com/in/lucasferreiralimax',
   appVersion,
   vueVersion,
   stepsInstall: [
