@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "darkmode-vue": "0.4.1",
-    "nucleus-vue": "^0.0.7",
+    "nucleus-vue": "^0.0.9",
     "vue": "^3.5.12"
   },
   "devDependencies": {
