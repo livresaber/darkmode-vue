@@ -1,5 +1,5 @@
 <script setup>
-import Nucleus, { NucleusCode } from 'nucleus-vue';
+import Nucleus, { NucleusCode, NucleusBox } from 'nucleus-vue';
 import DarkModeVue, { useDarkModeVue } from './main-darkmode';
 import { configApp } from './App.config';
 
@@ -8,20 +8,19 @@ const { mode, toggleMode } = useDarkModeVue()
 
 <template>
   <Nucleus :config="configApp">
-  <div class="content example">
-    <h2>Prop hiddenLabel</h2>
+  <NucleusBox class="example" title="Prop hiddenLabel">
     <NucleusCode language="tsx">
       {{`<DarkModeVue :hiddenLabel="true" />`}}
     </NucleusCode>
     <DarkModeVue :hiddenLabel="true" />
-
-    <h2>Prop hiddenIcon</h2>
+  </NucleusBox>
+  <NucleusBox class="example" title="Prop hiddenIcon">
     <NucleusCode language="tsx">
       {{`<DarkModeVue :hiddenIcon="true" />`}}
     </NucleusCode>
     <DarkModeVue :hiddenIcon="true" />
-
-    <h2>Prop labelDark and labelLight</h2>
+  </NucleusBox>
+  <NucleusBox class="example" title="Prop labelDark and labelLigh">
     <NucleusCode language="tsx">
       {{`<DarkModeVue
   labelDark="Tema escuro"
@@ -32,9 +31,8 @@ const { mode, toggleMode } = useDarkModeVue()
       labelDark="Tema escuro"
       labelLight="Tema claro"
     />
-  </div>
-  <div class="content example">
-    <h2>Slot change icon and label custom</h2>
+  </NucleusBox>
+  <NucleusBox class="example" title="Slot change icon and label custom">
     <NucleusCode language="tsx">
       {{`<DarkModeVue>
   <template #iconDark>
@@ -65,9 +63,8 @@ const { mode, toggleMode } = useDarkModeVue()
         On
       </template>
     </DarkModeVue>
-  </div>
-  <div class="content example">
-    <h2>Style modification and usage in your styles</h2>
+  </NucleusBox>
+  <NucleusBox class="example" title="Style modification and usage in your styles">
     <NucleusCode language="css">
       {{`body {
   --dm-color-primary: #41b883;
@@ -82,9 +79,8 @@ body.darkmode {
 }`}}
     </NucleusCode>
     <p>Create your variable colors and update this with class .darkmode.</p>
-  </div>
-  <div class="content example">
-    <h2>Usage useDarkModeVue with toggleMode and mode value</h2>
+  </NucleusBox>
+  <NucleusBox class="example" title="Usage useDarkModeVue with toggleMode and mode value">
     <NucleusCode language="tsx">
       {{`import { useDarkModeVue } from 'darkmode-vue';
 
@@ -101,7 +97,7 @@ const { mode, toggleMode } = useDarkModeVue();
     <p>In LocalStorage is created a key store with value current mode.</p>
     <p>Do you usage children body.darkmode styles for your application.</p>
     <p>I recommend create a variables colors in css and update this with toggle class of body document.</p>
-  </div>
+  </NucleusBox>
   </Nucleus>
 </template>
 
